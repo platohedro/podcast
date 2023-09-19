@@ -1,0 +1,9 @@
+---
+import EpisodeLayout from "../layouts/EpisodeLayout.astro";
+import astropodConfig from "../../.astropod/astropod.config.json";
+import AudioPlayer from "../components/audioPlayer.astro";
+---
+<EpisodeLayout title="About" description={astropodConfig.description} cover={astropodConfig.cover}>
+    <iframe src="https://www.ivoox.com/player_es_podcast_2080380_zp_1.html" width="100%" height="400" frameborder="0" allowfullscreen="" scrolling="no" loading="lazy"></iframe>
+  </EpisodeLayout>
+
