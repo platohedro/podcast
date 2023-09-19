@@ -1,15 +1,17 @@
 ---
-title: PROCESOS VIVOS FERMANET → Estefania Heano
-audioUrl: https://ia800505.us.archive.org/15/items/astropod/1%20-%20Trailer%20with%20BG%20%28enhanced%29.ogg
+title: → Estefanía Heano
+audioUrl: https://ia801408.us.archive.org/35/items/procesos-vivos-femartnet-estefania-henao/ESTEFANIA%20HENAO.mp3
 pubDate: Oct 25 2022
-duration: 00:32
+duration: 25:39
 size: 0.7
 cover: "https://ia801408.us.archive.org/35/items/procesos-vivos-femartnet-estefania-henao/ESTEFANIA_2.png"
-explicit: false
+explicit: true
 episode: 1
 season: 1
 episodeType: full
 ---
 
 
-## mos
+## PROCESOS VIVOS FERMANET
+
+![](https://archive.org/download/procesos-vivos-femartnet-estefania-henao/ESTEFANIA_2.png)

@@ -1,6 +1,6 @@
 ---
-title: PROCESOS VIVOS FERMANET → Eliana Morales
-audioUrl: https://ia803202.us.archive.org/1/items/el-sueno-de-una-pension-modlar-16-de-julio/EL%20sue%C3%B1o%20de%20una%20pension%20MODLAR%2016%20DE%20JULIO.mp3
+title:  → Eliana Morales
+audioUrl: https://archive.org/download/procesos-vivos-femarnet-1/ELIANA_PODCAST.mp3
 pubDate: Oct 03 2022
 duration: 10:19
 size: 0.7
@@ -10,4 +10,7 @@ episode: 1
 season: 1
 episodeType: full
 ---
-Eliana Morales Artista colombiana que trabaja con...
+
+
+## PROCESOS VIVOS FERMANET
+![](https://archive.org/download/procesos-vivos-femarnet-1/ELIANA4.png)

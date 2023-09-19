@@ -1,6 +1,6 @@
 ---
-title: EL ARTE DEL BUEN VIVIR → Astrid Gonzáles
-audioUrl: https://ia800505.us.archive.org/15/items/astropod/1%20-%20Trailer%20with%20BG%20%28enhanced%29.ogg
+title: → Astrid Gonzáles
+audioUrl: https://archive.org/download/astrid-podcast/ASTRID%20PODCAST.mp3
 pubDate: Oct 13 2021
 duration: 00:32
 size: 0.7
@@ -12,4 +12,6 @@ episodeType: full
 ---
 
 
-## mos
+## EL ARTE DEL BUEN VIVIR
+
+![](https://archive.org/download/astrid-podcast/astrid.jpg)
