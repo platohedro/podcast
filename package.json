@@ -2,7 +2,7 @@
   "name": "astropod",
   "description": "Astropod is a free and open-source serverless podcast template. Host your podcast for free using online third-party services.",
   "type": "module",
-  "author": "Manuel Ernesto Garcia",
+  "author": "Platohedro",
   "version": "1.0.0",
   "private": true,
   "scripts": {
