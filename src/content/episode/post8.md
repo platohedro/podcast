@@ -4,7 +4,7 @@ audioUrl: https://ia601408.us.archive.org/1/items/leifer-madrid/Pr%C3%A1cticas%2
 pubDate: Oct 24 2023
 duration: 00:32
 size: 0.7
-cover: "https://ia601408.us.archive.org/1/items/leifer-madrid/PODCAST.png"
+cover: "https://ia801408.us.archive.org/1/items/leifer-madrid/planeta%20en%20emergencia.png"
 explicit: false
 episode: 2
 season: 1
@@ -14,4 +14,4 @@ episodeType: full
 
 ## Prácticas artísticas para un planeta en emergencia
 
-![](https://ia601408.us.archive.org/1/items/leifer-madrid/PODCAST.png)
+![](https://ia801408.us.archive.org/1/items/leifer-madrid/planeta%20en%20emergencia.png)
