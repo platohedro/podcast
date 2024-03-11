@@ -25,15 +25,30 @@ const pepasSchema = z.object({
     duration: z.coerce.string(), //duration in format hh:mm:ss
     size: z.number(), // size in megabytes
 });
+const radiocypherSchema = z.object({
+    title: z.string(),
+    audioUrl: z.string(),
+    pubDate: z.coerce.date().optional(),
+    cover: z.string().optional(),
+    explicit: z.boolean().optional(),
+    radiocypher: z.number().optional(),
+    season: z.number().optional(),
+    radiocypherType: z.string().optional(),
+    duration: z.coerce.string(), //duration in format hh:mm:ss
+    size: z.number(), // size in megabytes
+});
 
+export type radiocypherSchema = z.infer<typeof radiocypherSchema>;
 export type episodeSchema = z.infer<typeof episodeSchema>;
 export type pepasdeSchema = z.infer<typeof pepasSchema>;
 
 const episodeCollection = defineCollection({ schema: episodeSchema });
+const radiocypherCollection = defineCollection({ schema: radiocypherSchema });
 const pepasCollection = defineCollection({ schema: pepasSchema });
 
 export const collections = {
     'episode': episodeCollection,
     'pepas': pepasCollection,
+    'radiocypher': radiocypherCollection,
 }
 
