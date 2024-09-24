@@ -1,22 +1,23 @@
 ---
-import BaseLayout from "../../layouts/BaseLayout.astro";
-import HorizontalCard from "../../components/HorizontalCard.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HorizontalCard from "../components/HorizontalCard.astro";
 import { getCollection } from "astro:content";
-import astropodConfig from "../../../.astropod/astropod.config.json";
-import HeaderCard from "../../components/headerCard/HeaderCard.astro";
-import AudioPlayer from "../../components/audioPlayer.astro";
+import astropodConfig from "../../.astropod/astropod.config.json";
+import HeaderCard from "../components/headerCard/HeaderCard.astro";
+import AudioPlayer from "../components/audioPlayer.astro";
 import PlainTextRenderer from "marked-plaintext";
 import { marked } from "marked";
-import Pagination from "../../components/pagination.astro";
+import Pagination from "../components/pagination.astro";
 
 const renderer = new PlainTextRenderer();
 
 export async function getStaticPaths({ paginate }) {
   const radiocyphers = await getCollection("radiocypher");
   radiocyphers.sort((a, b) => {
-    const pubDateA = a.data.pubDate ? a.data.pubDate.valueOf() : 0;
-    const pubDateB = b.data.pubDate ? b.data.pubDate.valueOf() : 0;
-    return pubDateB - pubDateA;
+    if (!a.data.pubDate || !b.data.pubDate) {
+      return 0;
+    }
+    return b.data.pubDate.valueOf() - a.data.pubDate.valueOf();
   });
   return paginate(radiocyphers, { pageSize: astropodConfig.pageSize });
 }
@@ -42,8 +43,6 @@ const { page } = Astro.props;
       ))
     }
   </div>
-
+  <h1>Hola</h1>
   {page && page.url && (page.url.next || page.url.prev) && <Pagination page={page} />}
 </BaseLayout>
-
-<AudioPlayer />
