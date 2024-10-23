@@ -89,67 +89,91 @@ import AudioMutedIcon from "./icons/audioMutedIcon.astro";
   };
 
   const displayDuration = () => {
-    durationContainer.textContent = calculateTime(audio.duration);
+    if (durationContainer && audio) {
+      durationContainer.textContent = calculateTime(audio.duration);
+    }
   };
 
-  if (audio.readyState > 0) {
+  if (audio && audio.readyState > 0) {
     displayDuration();
     audioLoading?.classList.add("hidden");
     audioControl?.classList.remove("hidden");
-  } else {
+  } else if (audio) {
     audio.addEventListener("loadedmetadata", () => {
       displayDuration();
-      seekSlider?.setAttribute("max", audio.duration);
+      if (seekSlider) {
+        seekSlider.setAttribute("max", audio.duration.toString());
+      }
       audioLoading?.classList.add("hidden");
       audioControl?.classList.remove("hidden");
     });
   }
 
-  muteIconContainer.addEventListener("click", () => {
-    audio.muted = muteIconContainer.checked;
-  });
+  if (muteIconContainer) {
+    muteIconContainer.addEventListener("click", () => {
+      if (audio) {
+        audio.muted = (muteIconContainer as HTMLInputElement).checked;
+      }
+    });
+  }
 
-  playIconContainer.onchange = function () {
-    if (playIconContainer.checked) {
-      audio.play();
-    } else {
-      audio.pause();
-    }
-  };
+  if (playIconContainer) {
+    playIconContainer.onchange = function () {
+      if (audio) {
+        if ((playIconContainer as HTMLInputElement).checked) {
+          audio.play();
+        } else {
+          audio.pause();
+        }
+      }
+    };
+  }
 
-  seekSlider.addEventListener("input", () => {
-    currentTimeContainer.textContent = calculateTime(seekSlider.value);
-  });
+  if (seekSlider) {
+    seekSlider.addEventListener("input", () => {
+      if (currentTimeContainer) {
+        currentTimeContainer.textContent = calculateTime((seekSlider as HTMLInputElement).value);
+      }
+    });
 
-  seekSlider.addEventListener("change", () => {
-    audio.currentTime = seekSlider.value;
-  });
+    seekSlider.addEventListener("change", () => {
+      if (audio) {
+        audio.currentTime = parseFloat((seekSlider as HTMLInputElement).value);
+      }
+    });
+  }
 
-  audio.addEventListener("timeupdate", () => {
-    seekSlider.value = Math.floor(audio.currentTime);
-    currentTimeContainer.textContent = calculateTime(seekSlider.value);
-  });
+  if (audio) {
+    audio.addEventListener("timeupdate", () => {
+      if (seekSlider && currentTimeContainer) {
+        (seekSlider as HTMLInputElement).value = Math.floor(audio.currentTime).toString();
+        currentTimeContainer.textContent = calculateTime((seekSlider as HTMLInputElement).value);
+      }
+    });
+  }
 
   const playButtons = document.querySelectorAll(".card-pay-buttons");
 
   playButtons.forEach(function (btn) {
     btn.addEventListener("click", () => {
-      if (!audio.src.includes(btn.dataset.audioUrl)) {
-        musicPlayer?.classList.remove("hidden");
-        musicPlayer?.classList.add("flex");
-        footer?.classList.add("pb-24");
-        setTimeout(() => musicPlayer?.classList.remove("opacity-0"), 100);
-        audioLoading?.classList.remove("hidden");
-        audioControl?.classList.add("hidden");
-        durationContainer.textContent = "0:00";
-        currentTimeContainer.textContent = "0:00";
-        audio.src = btn.dataset.audioUrl;
-        audioDownloadLink.href = btn.dataset.audioUrl;
-        disableOthersPlayButtons(btn.id, playButtons);
-        playIconContainer.checked = true;
-        audio.play();
-      } else {
-        playIconContainer?.click();
+      if (audio && btn instanceof HTMLElement && btn.dataset.audioUrl) {
+        if (!audio.src.includes(btn.dataset.audioUrl)) {
+          musicPlayer?.classList.remove("hidden");
+          musicPlayer?.classList.add("flex");
+          footer?.classList.add("pb-24");
+          setTimeout(() => musicPlayer?.classList.remove("opacity-0"), 100);
+          audioLoading?.classList.remove("hidden");
+          audioControl?.classList.add("hidden");
+          if (durationContainer) durationContainer.textContent = "0:00";
+          if (currentTimeContainer) currentTimeContainer.textContent = "0:00";
+          audio.src = btn.dataset.audioUrl;
+          if (audioDownloadLink) (audioDownloadLink as HTMLAnchorElement).href = btn.dataset.audioUrl;
+          disableOthersPlayButtons(btn.id, playButtons);
+          (playIconContainer as HTMLInputElement).checked = true;
+          audio.play();
+        } else {
+          playIconContainer?.click();
+        }
       }
     });
   });
