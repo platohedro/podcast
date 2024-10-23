@@ -42,7 +42,35 @@ const { page } = Astro.props;
       ))
     }
   </div>
+  <div class="p-8 text-center"> <p>Este proyecto es apoyado por el Presupuesto Participativo de la comuna 8 de Medellín</p>
+  <div class="logos-container">
+    <img src="https://www.medellin.gov.co/es/wp-content/themes/theme_alcaldia/logos/logo_footer.png" alt="Logo 1" class="logo" />
+    <!-- <img src="https://platohedro.org/wp-content/uploads/2023/05/thinking-1.png" alt="Logo 2" class="logo" /> -->
+  </div>
 
+  <style>
+    .logos-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+      padding-top: 20px;
+    }
+
+    .logo {
+      max-width: 100px;
+      height: auto;
+    }
+
+    @media (max-width: 600px) {
+      .logo {
+        max-width: 80px;
+      }
+    }
+  </style>
+  </div>
   {page && page.url && (page.url.next || page.url.prev) && <Pagination page={page} />}
 </BaseLayout>
 

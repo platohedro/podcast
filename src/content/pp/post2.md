@@ -1,5 +1,5 @@
 ---
-title:  → Episodio 1
+title:  → Episodio 2
 audioUrl: https://platohedro.org/wp-content/uploads/2022/11/Plantas-amigues_finished.mp3
 pubDate: Oct 03 2022
 duration: 10:19
