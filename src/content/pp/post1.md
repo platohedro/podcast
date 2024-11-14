@@ -1,10 +1,10 @@
 ---
-title:  → Episodio 1
+title:  → Introducción a web 3 y blockchain para organizaciones sociales
 audioUrl: https://drive.google.com/file/d/1ewX2-FeAEeyDY7cfQvkQBHtUStxg9yg8/view?usp=drive_link
-pubDate: Oct 03 2022
+pubDate: Nov 14 2024
 duration: 10:19
 size: 0.7
-cover: "https://platohedro.org/wp-content/uploads/2023/04/SAMPLING-THE-WORLD.png"
+cover: "https://platohedro.org/wp-content/uploads/2024/11/Pieza_Grafica_Podcast.jpg"
 explicit: false
 episode: 1
 season: 1
@@ -12,4 +12,4 @@ episodeType: full
 ---
 
 
-## RadioCypher
+## Introducción a web 3 y blockchain para organizaciones sociales
