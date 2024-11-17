@@ -1,6 +1,6 @@
 ---
 title:  → Introducción a web 3 y blockchain para organizaciones sociales
-audioUrl: https://drive.google.com/file/d/1ewX2-FeAEeyDY7cfQvkQBHtUStxg9yg8/view?usp=drive_link
+audioUrl: https://platohedro.org/wp-content/uploads/2024/11/RADIOCYPHER_PP_EPISODIO_1.mp3
 pubDate: Nov 14 2024
 duration: 10:19
 size: 0.7
