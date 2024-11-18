@@ -13,3 +13,7 @@ episodeType: full
 
 
 ## Introducción a web 3 y blockchain para organizaciones sociales
+![](https://platohedro.org/wp-content/uploads/2024/11/Pieza_Grafica_Podcast.jpg)
+
+Introducción a web 3 y blockchain para organizaciones sociales
+Descubre cómo la tecnología blockchain y la web3 están transformando el panorama de las organizaciones sociales. Exploraremos los conceptos básicos de manera accesible, entendiendo cómo estas tecnologías pueden empoderar a las comunidades locales de Medellín, mejorar la transparencia y crear nuevas oportunidades de impacto social. Aprenderemos sobre tokens, contratos inteligentes y descentralización desde una perspectiva práctica y social.

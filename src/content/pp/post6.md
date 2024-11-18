@@ -1,5 +1,5 @@
 ---
-title:  → Generación de comunidad blockchain
+title:  → Hablemos de sostenibilidad y gestión de recursos
 audioUrl: https://platohedro.org/wp-content/uploads/2024/11/RADIOCYPHER_PP_EPISODIO_6.mp3
 pubDate: Nov 14 2024
 duration: 10:19
@@ -12,4 +12,8 @@ episodeType: full
 ---
 
 
-## Generación de comunidad blockchain
+## Hablemos de sostenibilidad y gestión de recursos
+
+![](https://platohedro.org/wp-content/uploads/2024/11/Podacst_PP_Pieza_2.jpg)
+
+Exploraremos modelos innovadores de financiamiento y gestión de recursos a través de blockchain. Desde tokenomics hasta crowdfunding descentralizado, analizaremos cómo las organizaciones sociales pueden diversificar sus fuentes de ingresos y crear modelos sostenibles. Discutiremos la importancia de la transparencia financiera y cómo implementar sistemas de gestión eficientes.
