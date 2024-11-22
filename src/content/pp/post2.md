@@ -1,7 +1,7 @@
 ---
-title:  → Hablemos de sostenibilidad y gestión de recursos
+title:  → Mitos y cudiados en web 3
 audioUrl: https://platohedro.org/wp-content/uploads/2024/11/RADIOCYPHER_PP_EPISODIO_2.mp3
-pubDate: Oct 03 2022
+pubDate: Nov 19 2024
 duration: 10:19
 size: 0.7
 cover: "https://platohedro.org/wp-content/uploads/2024/11/Podacst_PP_Pieza_2.jpg"
