@@ -2,6 +2,7 @@
 import BaseHead from "../components/BaseHead.astro";
 import Footer from "../components/Footer.astro";
 import astropodConfig from "../../.astropod/astropod.config.json";
+import Analytics from '@vercel/analytics/astro'
 
 import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
 
@@ -12,6 +13,7 @@ const { image, title = astropodConfig.name, description = astropodConfig.descrip
 <!DOCTYPE html>
 <html lang="en" data-theme={astropodConfig.theme}>
   <head>
+    <Analytics />
     <BaseHead title={title} description={description} image={image} />
   </head>
   <body class="bg-teal-300 min-h-screen">
